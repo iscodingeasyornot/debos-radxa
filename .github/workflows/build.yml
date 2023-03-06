@@ -40,7 +40,7 @@ jobs:
         id: combinations
         run: |
           ${GITHUB_WORKSPACE}/scripts/generate-matrix-include.sh \
-          -b radxa-cm3-io,radxa-e23,radxa-e25,radxa-nx5,radxa-zero,radxa-zero2,rockpi-4b,rock-4c-plus,rock-3a,rock-3b,rock-3c,rock-5a,rock-5b \
+          -b rock-5b \
           -m debian,ubuntu \
           -v xfce4,server >> $GITHUB_OUTPUT
     outputs:
